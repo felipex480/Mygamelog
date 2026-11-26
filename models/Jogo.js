@@ -28,6 +28,7 @@ const jogoSchema = new mongoose.Schema(
     },
     tempoJogo: { type: Number, min: 0 },
     nota: { type: Number, min: 1, max: 10 },
+    anotacoes: { type: String, trim: true, maxlength: 500, default: "" },
   },
   { timestamps: true }
 );
